@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>cloud-upload-java</display-name>
+
+  <servlet>
+    <servlet-name>FormHandler</servlet-name>
+    <servlet-class>com.caiofilipini.upload.handler.FormHandler</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>StatusHandler</servlet-name>
+    <servlet-class>com.caiofilipini.upload.handler.StatusHandler</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UploadHandler</servlet-name>
+    <servlet-class>com.caiofilipini.upload.handler.UploadHandler</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DetailsHandler</servlet-name>
+    <servlet-class>com.caiofilipini.upload.handler.DetailsHandler</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FormHandler</servlet-name>
+    <url-pattern>/form</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>StatusHandler</servlet-name>
+    <url-pattern>/status</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UploadHandler</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DetailsHandler</servlet-name>
+    <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
